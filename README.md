@@ -40,7 +40,7 @@ python main.py
 
 The script will:
 1. Clone the maps4fs repository (shallow clone)
-2. Find and load all `.md` files from the `docs` folder (excluding `SUMMARY.md`)
+2. Find and load all `.md` files from the `docs` folder
 3. Split documents into optimized chunks (800 chars with 300 overlap for precision)
 4. Create high-quality embeddings using GPU acceleration
 5. Store everything in a `chroma_db` folder

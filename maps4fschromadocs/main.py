@@ -5,7 +5,7 @@ GPU-optimized for high-quality embeddings - always rebuilds from scratch
 Original plan:
 - shallow clone github.com/iwatkot/maps4fs
 - find the docs folder
-- use all md files from there (excluding SUMMARY.md)
+- use all md files from there
 - save it to a chroma_db
 
 GPU Optimizations for ingestion:
@@ -77,7 +77,7 @@ def clone_repository():
 
 
 def load_markdown_documents(docs_dir):
-    """Load markdown files from docs directory, excluding SUMMARY.md"""
+    """Load markdown files from docs directory."""
     print(f"Loading markdown files from {docs_dir}...")
 
     documents = []
@@ -87,10 +87,10 @@ def load_markdown_documents(docs_dir):
         print(f"✗ Docs directory not found: {docs_dir}")
         return documents
 
-    # Find all .md files, excluding SUMMARY.md
-    md_files = [f for f in docs_path.rglob("*.md") if f.name.lower() != "summary.md"]
+    # Find all .md files.
+    md_files = [f for f in docs_path.rglob("*.md")]
 
-    print(f"Found {len(md_files)} markdown files (excluding SUMMARY.md)")
+    print(f"Found {len(md_files)} markdown files")
 
     for md_file in md_files:
         try:
