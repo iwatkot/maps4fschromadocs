@@ -1,0 +1,19 @@
+# Core LangChain packages for document processing and vector storage
+langchain-community>=0.2.0
+langchain-text-splitters>=0.2.0
+langchain-core>=0.2.0
+langchain-chroma>=0.1.0
+langchain-ollama>=0.1.0
+
+# Vector database
+chromadb>=0.4.0
+
+# Additional utilities
+pathlib  # Usually included in Python 3.4+
+
+# Note: Git must be installed separately on your system
+# Note: Ollama must be installed and a high-quality embedding model pulled:
+#   ollama pull nomic-embed-text
+# Alternative models for GPU:
+#   ollama pull mxbai-embed-large
+#   ollama pull snowflake-arctic-embed:l

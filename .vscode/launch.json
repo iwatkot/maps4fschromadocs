@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Upload train_data",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/maps4fschromadocs/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Answer Test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/maps4fschromadocs/test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+    ]
+}
