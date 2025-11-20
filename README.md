@@ -14,6 +14,8 @@
 </div>
 
 <div align="center">
+    
+<img src="https://github.com/iwatkot/maps4fschromadocs/releases/download/0.0.1/chromadocs-1280-640.png">
 
 <p align="center">
     <a href="#maps4fs-documentation-chromadb-ingestion">Overview</a> •
